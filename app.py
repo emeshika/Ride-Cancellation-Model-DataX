@@ -128,7 +128,7 @@ st.markdown(
 def show_banner(path: str, caption: str | None = None):
     p = Path(path)
     if p.exists():
-        st.image(str(p).replace("\\", "/"), use_column_width=True, caption=caption)
+        st.image(str(p).replace("\\", "/"), use_container_width=True, caption=caption)
 
 # ==============================
 # Model loader (Pipeline OR dict bundle)
